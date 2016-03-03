@@ -1,0 +1,156 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <style>
+/* #test {
+ border: 2px solid black;
+ }*/
+#container{
+ width: 226px;
+ height: 274px;
+ border: 3px solid blue;
+ margin: auto
+}
+.t1, .t4{
+ border: 1px solid black;
+ height: 48px;
+ margin-left: 3px;
+ margin-top: 3px;
+ display: inline-block;
+ text-align: center;
+ line-height: 48px;
+}
+.t1{
+ width: 48px;
+}
+.t4{
+ width: 219px;
+}
+</style>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <script src="newjavascript.js" type="text/javascript"></script>
+        <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+        </style>
+
+    </head>
+    <body>
+<h1>My First JavaScript</h1>
+
+
+<script>
+document.onmouseover = function(e) {
+}
+</script>
+
+<button name="yo" id="12" style="width:20px; height:20px;"  onclick="myFunction()"></button>
+<button name="ye" id="13" style="width:20px; height:20px;"  onclick="myCreateFunction()"></button>
+<p id="demo"></p>
+<div id="1" onclick="randompopup(1)" onmouseout="removefunc(1)" onmouseover="mouseoverfunc(1)" style="width:50px; height:50px; background-color:  blue;">
+    
+    <p id="mydiv1"></p>
+</div>
+<hr>
+<div id="2" onclick="randompopup(2)" onmouseout="removefunc(2)" onmouseover="mouseoverfunc(2)" style="width:50px; height:50px; background-color: red;">
+<p id="mydiv2"></p></div>
+<hr>
+<div id="3" onclick="randompopup(3)" onmouseout="removefunc(3)" onmouseover="mouseoverfunc(3)" style="width:50px; height:50px; background-color: yellow;">
+<p id="mydiv3"></p></div>
+<hr>
+<table id="myTable">
+
+</table>
+<hr>
+
+<br>
+
+<button onclick="myCreateFunction()">Create row</button>
+<button onclick="myDeleteFunction()">Delete row</button>
+
+<br>
+<hr>
+<br>
+<form id="someform">
+    
+        <input type="text" name="User" value="Arsalan"/><br><br>
+        <input type="password" name="pass" value="123"/><br><br>
+        <input type="number" name="age" value="24"/><br><br>
+        <input type="text" name="email" value="johndoe@test.com"/><br><br>
+        <textarea name="message">Enter Your Message Her</textarea><br><br>
+
+    
+</form>
+    <button onclick="writetotable()">Write to table..</button>
+<hr>
+<table id="myTable2">
+
+</table>
+<hr>
+
+<ul style="width:30px; height:auto; font-size: 22px; line-break: 2px;" id="myullist" onclick="greetconsole()" onmouseout="listreducesize()" onmouseover="listdoublesize()" >
+    <li>a</li>
+    <li>b</li> 
+    <li>c</li> 
+    <li>d</li> 
+    <li>e</li> 
+    <li>f</li> 
+    <li>g</li> 
+    <li>h</li> 
+    <li>i</li> 
+    <li>j</li> 
+</ul>
+
+<hr>
+
+
+
+
+<div id="container">
+ <div id="display" class="t4"></div>
+
+ <div id="seven" class="t1" onclick="calculate(this.innerHTML)">7</div>
+ <div id="eight" class="t1" onclick="calculate(this.innerHTML)">8</div>
+ <div id="nine" class="t1" onclick="calculate(this.innerHTML)">9</div>
+ <div id="divide" class="t1" onclick="calculate(this.innerHTML)">/</div>
+
+ <div id="four" class="t1" onclick="calculate(this.innerHTML)">4</div>
+ <div id="five" class="t1" onclick="calculate(this.innerHTML)">5</div>
+ <div id="six" class="t1" onclick="calculate(this.innerHTML)">6</div>
+ <div id="multiply" class="t1" onclick="calculate(this.innerHTML)">*</div>
+
+ <div id="one" class="t1" onclick="calculate(this.innerHTML)">1</div>
+ <div id="two" class="t1" onclick="calculate(this.innerHTML)">2</div>
+ <div id="three" class="t1" onclick="calculate(this.innerHTML)">3</div>
+ <div id="minus" class="t1" onclick="calculate(this.innerHTML)">-</div>
+
+ <div id="zero" class="t1" onclick="calculate(this.innerHTML)">0</div>
+ <div id="comma" class="t1" onclick="calculate(this.innerHTML)">,</div>
+ <div id="plus" class="t1" onclick="calculate(this.innerHTML)">+</div>
+ <div id="equal" class="t1" onclick="calculate(this.innerHTML)">=</div>
+
+</div>
+
+
+
+<script>
+createlist();
+</script>
+<script>
+
+
+function myDeleteFunction() {
+    document.getElementById("myTable").deleteRow(0);
+}
+</script>
+
+
+    </body>
+</html>
